@@ -1,0 +1,46 @@
+/*
+Theme Name: Image Sharing
+Author: rahasoft-amin
+Description: Share photos Women 1394.
+Version: 1.0
+*/
+
+/*
+* Table of content
+*=================
+*
+*	1.Header
+*
+*=================
+*/
+
+/*=============
+*   1.Header
+===============*/
+header .top-menu ul li .user-profile a > span {margin-right: 5px; color: #7E7EFF;}
+header .top-menu ul li .user-profile a > img {border-radius: 20px !important;}
+header .top-menu ul li .user-details ul li {border-left: none;padding: 0px;margin: 0px;width: 20%;text-align: center;}
+header .top-menu ul li .user-details ul li a {padding: 10px;background-color: #D48484;color: #ffffff;border-radius: 3px;font-size: 12px;}
+header .top-menu ul li .user-details ul li a:hover {background-color: #1F425D;-webkit-transition: .5s;transition: .5s;}
+header .top-menu ul li .user-profile {padding: 0px;float: right;}
+header .top-menu ul li .user-profile a {padding: 0px;}
+header .top-menu ul li .user-details .badge {position: absolute;z-index: 1;margin: 0px;margin-right: -5px;top: 0;right: inherit;padding: 3px 4px;
+                                             display: inline-block;
+                                             min-width: 10px;
+                                             font-size: 12px;
+                                             font-weight: 700;
+                                             line-height: 1;
+                                             color: #ffffff;
+                                             text-align: center;
+                                             white-space: nowrap;
+                                             vertical-align: middle;
+                                             background-color: #777777 !important;
+                                             border-radius: 10px;}
+header .top-menu ul li .score-image {padding: 0px;float: left;margin-left: 5px;}
+header .top-menu ul li .score-image a {padding: 0px;color: #1F425D;}
+header .top-menu ul li .score-image a i {padding: 0px 5px;}
+header .top-menu ul li .score-image a:first-child {float: left;}
+header .top-menu ul li .score-image a:last-child {float: left;clear: both;}
+header .top-menu ul li .score-image a:last-child {float: left;clear: both;}
+.hover-menu-na a:hover,
+.hover-menu-na a:focus {color: #ffffff;}

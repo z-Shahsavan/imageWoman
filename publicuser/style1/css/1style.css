@@ -1,0 +1,523 @@
+/*
+Theme Name: Image Sharing
+Author: rahasoft-amin
+Description: Share photos Women 1394.
+Version: 1.0
+*/
+
+/*
+* Table of content
+*=================
+*
+*	1.Resets & General
+*	2.Typography
+*	3.Header
+*	4.Navigation
+*	5.Section
+*		5.1.Slideshow
+*       6.Aside
+*		6.1.Search
+*		6.2.Sendimage
+*		6.3.Confirmationimage
+*		6.4.Participantimage
+*	7.Images Competition	
+*	8.Responsive
+*
+*=================
+*/
+
+/*=============
+*   1.Resets & General
+===============*/
+.container-fluid {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+body,h1,h2,h3,h4,h5,h6,span,ul,li,a {
+    font-family:'iran',tahoma;
+}
+ul {padding-right: 0px;}
+.paddingrightleft0 {padding-right: 0px !important;padding-left: 0px !important;}
+.paddingright0{padding-right: 0px !important;}
+.paddingleft0{padding-left: 0px !important;}
+.tooltip {font-family: 'iran' !important;}
+.none {display: none;}
+.show {display: show;}
+.paddingtopbottom5 {padding-top: 5px;padding-bottom: 5px;}
+.alert-error {color: #FF0F0F;direction: rtl;}
+.alert-ok {color:#323CF0;direction: rtl;}
+.forgot-text {float: right;margin-top: 10px;font-size: 12px;}
+
+/*=============
+*   2.Typography
+===============*/
+@font-face {
+    font-family:"iran";
+    src: url("../fonts/iran.woff") format("woff"),
+        url("../fonts/iran.woff2") format("woff2"),
+        url("../fonts/iran.eot?#iefix") format("embedded-opentype"),
+        url('../fonts/iran.ttf') format('truetype');
+}
+
+/*=============
+*   3.Header
+===============*/
+/*header {height: 70px;background-color: #ffffff;}*/
+header .logo {float: right;}
+header .logo img {margin-bottom: -10px;float: right;}
+header .top-menu {float: left;}
+header .top-menu ul li {height: 40px;list-style: none;float: right;direction: rtl;padding: 3px;}
+header .top-menu ul li a {text-decoration: none;padding: 0px 10px;}
+header .top-menu ul li:nth-child(1) {background-color: rgba(255,255,255,.3);}
+header .top-menu ul li:nth-child(1),
+header .top-menu ul li:nth-child(2) {margin-top: 0px;}
+header .top-menu ul li span {margin-right: 20px;color: #919493;font-size: 14px;}
+header .top-menu ul li:hover span{color: #30393a;-webkit-transition: .5s;transition: .5s;}
+header .accountmodal li {float: right;width: 50%;text-align: center;}
+.accountmodal>li.active>a {border-top: 2px solid #c10397 !important;}
+header .accountmodal li a {border-radius: 0px;background-color: #FAF0E7 !important;}
+header .accountmodal li a .img-login {width: 15px;}
+header .accountmodal li a .img-register {width: 19px;}
+header .modal-body {padding: 5px 5px 0px 5px; font-family: 'iran',tahoma;}
+header .modal-body form {width: 300px;margin: 40px auto;}
+header .modal-body form label,header .modal-body form input {float: right;direction: rtl;font-size: 14px;}
+header .modal-body form label {float: right;clear: both;margin-top: 6px;}
+header .modal-body form input {margin-bottom: 15px;width: 200px;float: left;border: 2px solid #b0b0b1;}
+header .modal-body form input::-webkit-input-placeholder {padding-top: 4px;}
+header .modal-body form input:-moz-placeholder {padding-top: 4px;}
+header .modal-body form button {border-radius: 4px !important;margin-top: 10px;width: 100px !important;float: right !important;}
+header .modal-body form button:first-child {margin-left: 5px !important;background-color: #9cec2f !important;border: 1px solid #d5d5d5 !important;}
+header .modal-body form button:last-child {background-color: #FFA4A4;border: 1px solid #FF9595;color: #ffffff;}
+header .modal-body form button span {font-size: 12px;}
+.accountModalcontent {background-color: #e9eae8 !important;}
+.activeaccount form button {float: initial !important;}
+.btn-register {background-color: #337AB7 !important;border-color: #2e6da4 !important;}
+.btn-section {direction: rtl;}
+.btn-section button {float: initial !important;}
+.left-section {float: left !important;background-color: #717171 !important;border: 1px solid #717171 !important;}
+.left-section-second {color: #ffffff;padding: 6px 10px;border-radius: 5px;margin-top: 10px;}
+
+
+.accountModalcontent .modal-header {
+    padding: 10px !important;
+    text-align: center;
+}
+.accountModalcontent .modal-header img {
+    width: 20px;
+    margin-left: 5px;
+}
+header .top-menu ul li .user-profile a > span {margin-right: 5px; color: #7E7EFF;font-size: 12px;}
+header .top-menu ul li .user-profile a > img {border-radius: 20px;width: 34px;height:34px;}
+header .top-menu ul li .user-details ul li {border-left: none;padding: 0px;margin: 0px;width: 20%;text-align: center;}
+header .top-menu ul li .user-details ul li a {padding: 12px;background-color: #FFFFFF;color: #5D5D5D;border-radius: 20px;font-size: 14px;box-shadow: 0px 0px 8px #000000;}
+header .top-menu ul li .user-details ul li a:hover {background-color: #F2D4FF;-webkit-transition: .5s;transition: .5s;}
+header .top-menu ul li .user-details ul li span {color: #ffffff;}
+header .top-menu ul li .user-profile {padding: 0px;float: right;}
+header .top-menu ul li .user-profile a {padding: 0px;}
+header .top-menu ul li .user-details .badge {position: absolute;z-index: 1;margin: 0px;margin-right: -5px;top: 0;padding: 3px 4px;}
+header .top-menu ul li .score-image {padding: 0px;float: left;margin-left: 5px;}
+header .top-menu ul li .score-image a {padding: 0px;color: #FFFFFF;text-shadow: 0px 0px 5px #000000;}
+header .top-menu ul li .score-image a i {padding: 0px 5px;}
+header .top-menu ul li .score-image a:first-child {float: left;}
+header .top-menu ul li .score-image a:last-child {float: left;clear: both;}
+header .top-menu ul li .score-image a:last-child {float: left;clear: both;}
+
+/*=============
+*   4.Navigation
+===============*/
+nav ul {float: left;background-color: #1f425d;height: 52px;float: left;}
+nav ul li:first-child {margin-top: 0px;}
+nav ul li:first-child img {float: left;margin-top: -10px;}
+nav ul li {list-style: none;float: right;margin-top: 16px;margin-left: 60px;}
+nav ul li a {color: #e9e5dc; font-size: 14px;}
+nav ul li a:hover {color: #e9e5dc;text-decoration: none;}
+.white-rectangle {height: 26px;background-color: transparent;}
+.navy-rectangle {height: 26px;background-color: #1f425d;}
+.triangle-topright {width: 0;height: 0;border-top: 26px solid #ffffff;border-left: 26px solid transparent;margin-left: 15px;}
+.menu-icon {display: none;}
+.caret-up {width: 0;height: 0;border-left: 4px solid rgba(0, 0, 0, 0);border-right: 4px solid rgba(0, 0, 0, 0);border-bottom: 4px solid;display: inline-block;margin-left: 2px;vertical-align: middle;}
+.hover-menu-nav-responsive {display: none;}
+nav .dropdown .dropdown-menu {right: 0px !important;border-top: 14px solid #1F425D;}
+.hover-menu-nav > ul > li > a:hover {background-color: transparent;}
+.hover-menu-nav a:focus {text-decoration: none;color: #e9e5dc;}
+
+/*=============
+*   5.Section
+===============*/
+section {float: right !important;}
+
+/*=============
+*	5.Section
+*   	5.1.Slideshow
+===============*/
+section .slideshow .carousel-control.right,.slideshow .carousel-control.left {background-image: none;}
+section .slideshow .carousel-control {text-shadow: 0 1px 2px rgba(0,0,0,1);opacity: 1;}
+section .slideshow .carousel .carousel-control { visibility: hidden;}
+section .slideshow .carousel:hover .carousel-control { visibility: visible;}
+section .slideshow .carousel-inner .item .carousel-caption h3 {font-family: 'iran';}
+.carousel-inner>.item>img {width:847px !important;height:398px !important;}
+
+/*=============
+*   6.Aside
+===============*/
+aside {float: left;padding-right: 0px !important;}
+
+/*=============
+*   6.Aside
+*		6.1.search
+===============*/
+aside .search {direction: rtl;text-align: center;border: 1px solid #e6e6e6;border-bottom: 3px solid #b9babc;}
+aside .search h4 {font-family: 'iran' !important;font-size: 13px;color: #989c9f;margin-top: 5px;margin-bottom: 5px;}
+aside .search form {margin-top: 5px;margin-bottom: 8px;float: right;}
+aside .search form input {height: 38px;background-color: #246aa0;color: #ffffff;font-family:'iran',tahoma;border:2px solid #204d6f;border-left: none;border-radius: 0px 25px 25px 0px;outline: 0;padding-right: 10px;float: right;}
+aside .search form input::-webkit-input-placeholder {color:#ffffff;padding-top: 0px;}
+aside .search form input:-moz-placeholder {color:#ffffff;padding-top: 4px;}
+aside .search form button {height: 38px;background-color: #246aa0;border: 2px solid #204d6f;border-right: none;border-radius: 25px 0px 0px 25px;float: right;}
+aside .search form button img {background-color: #204d6f;padding: 5px 10px;border-radius: 10px;}
+
+/*=============
+*   6.Aside
+*		6.2.Sendimage
+*		6.3.Confirmationimage
+*		6.4.Participantimage
+===============*/
+aside .sendimage,
+aside .confirmationimage,
+aside .participantimage {margin-top: 4px;direction: rtl;text-align: center;border: 1px solid #e6e6e6;border-bottom: 3px solid #b9babc;}
+aside .sendimage .details-sendimage,
+aside .confirmationimage .details-confirmationimage,
+aside .participantimage .details-participantimage {float: right;margin-top: 15px;padding-right: 5px;}
+aside .sendimage .details-sendimage span,
+aside .confirmationimage .details-confirmationimage span,
+aside .participantimage .details-participantimage span {color:#989c9f;padding-top: 10px;}
+aside .sendimage .details-sendimage h3,
+aside .confirmationimage .details-confirmationimage h3,
+aside .participantimage .details-participantimage h3 {color:#000000;font-family: 'iran';margin-top: 15px;}
+aside .sendimage .image-sendimage,
+aside .confirmationimage .image-confirmationimage,
+aside .participantimage .image-participantimage  {float: left;margin-top:5px;padding-left: 10px;}
+aside .sendimage .image-sendimage img {margin-bottom: 5px;}
+aside .confirmationimage .image-confirmationimage img {margin-bottom: 15px;}
+aside .participantimage .image-participantimage img {margin-bottom: 2px;}
+
+/*=============
+*   7.Images Competition
+===============*/
+.images-competition .tab-content {background-image: url(../images/pattern.png);  padding-bottom: 100px; margin-bottom: 5px;}
+.images-competition ul {border-bottom: none;}
+.images-competition ul li{float: right;direction: rtl;text-align: right;}
+.images-competition ul .width-li3 {width: 32%;}
+.images-competition ul .space-li-right,
+.images-competition ul .space-li-left {width: 2%;height: 95px;border:1px solid #E5E5E5;}
+.images-competition ul .space-li-right {border-top-right-radius: 5px;}
+.images-competition ul .space-li-left {border-top-left-radius: 5px;}
+.images-competition ul li a {font-size: 24px;margin: 0px;}
+.images-competition ul li a img {padding: 10px;}
+.images-competition .nav-tabs>li>a,
+.images-competition .nav-tabs>li>a:hover {border: 1px solid #e5e5e5;border-radius: 0px;}
+.images-competition .nav-tabs>li.active>a,
+.images-competition .nav-tabs>li.active>a:focus,
+.images-competition .nav-tabs>li.active>a:hover {border-top: 3px solid #c10397;border-radius: 0px;}
+.free-wall {margin: auto;}
+.free-wall-logo {margin: auto;height: 420px;}
+.size2-2 {width: 80px;height: 80px;}
+.size11 {height: 160px;width: 160px;}
+.size12 {width: 160px;height: 320px;}
+.size21 {width: 320px;height: 160px;}
+.size22 {height: 320px;width: 320px;}
+.size13 {width: 160px;height: 480px;}
+.size31 {width: 480px;height: 160px;}
+.size23 {width: 320px;height: 480px;}
+.size24 {width: 320px;height: 640px;}
+.size32 {width: 480px;height: 320px;}
+.size33 {width: 480px;height: 480px;}
+.size34 {width: 480px;height: 640px;}
+.size43 {width: 640px;height: 480px;}
+.size35 {width: 480px;height: 800px;}
+.size53 {width: 800px;height: 480px;}
+.size36 {width: 480px;height: 960px;}
+.donate form {height: 100%;width: 100%;background: rgb(44, 62, 80);}
+.donate form .paypal {display: block;margin: auto;padding: 20px 0px 0px 0px;outline: 0;}
+.img-demo {vertical-align: bottom;list-style: none;margin:0;padding: 0;}
+.img-demo li {float: left;width: 25%;text-align: center;}
+.img-demo li img {border: 2px solid white;width: 98px;height: 98px;}
+.float-left {float: left;}
+.float-right {float: right;}
+.clearfix:before,.clearfix:after {content: "";display: table;}
+.clearfix:after {clear: both;}
+.clearfix {zoom: 1; /* For IE 6/7 (trigger hasLayout) */}
+.rest-left {margin-left: 244px;}
+.desc h1,
+.desc h2,
+.desc h3,
+.desc h4,
+.desc h5,
+.desc h6 {font-weight: bold;}
+.desc h2 {border-bottom: 1px solid rgba(0,0,0,0.1);margin-top: 0px;margin-bottom: 0px;padding-bottom: 50px;}
+.desc h2 span {float: left;display: block;line-height: 50px;}
+.brick {background-color: white;float: left;cursor: default;overflow: hidden;background-repeat: no-repeat;background-size: cover;background-position: center;}
+.brick .cover {overflow: hidden;margin: 20px;}
+.brick .read-more {position: absolute;display: none;bottom: 0px;left: 0px;right: 0px;padding: 12px;background: rgb(0, 0, 0);background: rgba(0, 0, 0, 0.45);}
+.brick:hover .read-more {display: block;cursor: pointer;}
+.brick .desc {display: none;}
+.full-width .float-left {display: none;}
+.full-width .desc {display: block;}
+.full-width.brick {box-shadow: none;overflow: visible;border: none !important;background: none !important;}
+.full-width.brick .cover {margin: 0px 20px;color: #333;}
+.full-width.brick .cover * {text-shadow: none;}
+.full-width.brick .cover code {color: #666;}
+.open .float-left {display: none;}
+.open .desc {display: block;}
+.example {width: 0px;height: 0px;overflow: visible !important; /* for ie7 */}
+.example-draggable {cursor: move;}
+.example-draggable * {cursor: move;}
+.example-draggable a {cursor: pointer;}
+.cell {background-position: center center;background-repeat: no-repeat;background-size: cover;position: absolute;background-color: #222;}
+[class*="-share"] {cursor: pointer;margin: 20px 0;line-height: 30px;padding-left: 30px;}
+.facebook-share {background: url(../i/fb.png) no-repeat left center;}
+.twitter-share {background: url(../i/tw.png) no-repeat left center;}
+.google-share {background: url(../i/gp.png) no-repeat left center;}
+.download-icon {background: url(../i/download.png) no-repeat left center;display: block;margin: 0 0 10px 0;line-height: 30px;padding-left: 30px;}
+.js-icon {background: url(../i/js.png) no-repeat left center;display: block;line-height: 30px;padding-left: 30px;}
+.fork {float: right;width: 100%;height: 100%;display: block;background: url(../i/forkme.png) no-repeat top right;}
+.back-button {position: fixed;z-index: 9999;padding: 1%;bottom: 2%;right: 2%;display: none;background: black;}
+.back-button .back-icon {background: url(../i/back.png) no-repeat top center;width: 45px;height: 27px;display: block;}
+.back-button .back-icon:hover {background: url(../i/back.png) no-repeat bottom center;}
+.free-wall .image-head .score-image1 {float: left;}
+.free-wall .image-head .score-image1 img {float: left;padding: 10px 5px;}
+.free-wall .image-head .score-image1 span {float: left;padding: 10px 0px;font-size: 12px;}
+.free-wall .image-head .details-image1 {float: right;}
+.free-wall .image-head .details-image1 img {float: right;padding: 5px;width: 35px;height: 35px;}
+.free-wall .image-head a {color: #1f425d;}
+.free-wall .image-head .details-image1 span {float: right;font-size: 12px;padding-top: 8px;}
+.free-wall {margin: 0px 15px;}
+.brick {width: 221.2px;margin-top: 10px;box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.33);}
+.info {padding: 15px;color: #333;}
+.brick img {margin: 0px;padding: 1px 1px;display: block;}
+
+/* imgModal */
+.modal .modal-content {border-radius: 10px;border: 1px solid #d0d0cf;}
+.close {float: left !important;}
+.modal-header {padding: 15px 15px 0px 15px !important;}
+.modal-title {text-align: right;font-family: 'iran';}
+.modal-footer {text-align: left !important;font-family: 'iran';}
+.btn-takhalof {background-color: #FF8D8D;color: #ffffff;}
+.btn-takhalof:hover,
+.btn-takhalof:focus {background-color: #ffffff;color: #FF8D8D !important;border: 1px solid #FF8D8D;-webkit-transition: .5s;transition: .5s;}
+.img-details {float: right;direction: rtl;font-size: 12px;padding: 10px 0px;}
+.img-details .photographer-name,
+.img-details .competition-name,
+.img-details .upload-date,
+.img-details .rating-img {float: right;}
+.img-details .photographer-name img {float: right;width: 26px;height: 26px;}
+.img-details .photographer-name span {float: right;padding: 3px 5px 0px 0px;}
+.img-details .competition-name i {float: right;padding: 5px 0px 0px 0px;}
+.img-details .competition-name a {float: right;padding: 2px 10px 0px 0px;max-width: 150px;}
+.img-details .competition-name a:hover,
+.img-details .competition-name a:focus {text-decoration: none;}
+.img-details .upload-date i {float: right;padding: 5px 0px 0px 0px;}
+.img-details .upload-date span {float: right;padding: 4px 10px 0px 0px;}
+.img-details .rating-img span {float: right;padding: 0px 0px 0px 0px;}
+.img-details .rating-img .star-rating-rtl {float: right;padding: 0px 10px 0px 0px; direction: initial;}
+.rating-xs {font-size: 1.7em;}
+.rating-container-rtl {color: #ffd834 !important;}
+.modal-body img {margin: 0 auto;}
+.modal-body p {font-family: 'iran';padding: 10px 5px 0px 5px;direction: rtl;}
+
+/* violationModal */
+#modal-background {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    opacity: .50;
+    -webkit-opacity: .5;
+    -moz-opacity: .5;
+    filter: alpha(opacity=50);
+    z-index: 1000;
+}
+#modal-content {
+    width: 96%;
+    background-color: #ffffff;
+    border-radius: 0px !important;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    box-shadow: 0 0 20px 0 #222;
+    -webkit-box-shadow: 0 0 20px 0 #222;
+    -moz-box-shadow: 0 0 20px 0 #222;
+    display: none;
+    padding: 10px;
+    position: absolute;
+    top: 30%;
+    z-index: 1000;
+}
+#modal-background.active, #modal-content.active {display: block;}
+.violationimg {direction: rtl;}
+.violationimg label {float: right;font-weight: normal;}
+.violationimg input,
+.violationimg textarea {border-radius: 4px;}
+.violationimg button {border-radius: 4px !important;margin-top: 10px;width: 100px !important;float: right !important;}
+.violationimg button:first-child {margin-left: 5px !important;}
+.violationimg button:last-child {background-color: #FF6C6C;border:1px solid #FF6C6C; color: #ffffff;}
+.violationimg button span {vertical-align: middle;font-size: 12px;}
+.star-icon {font-size: 18px;color: #FFB907;}
+.padding3 {padding: 3px !important;}
+
+/*=============
+*   8.Responsive
+===============*/
+@media screen and (max-width: 1200px) {
+    .search {padding:0px !important;}
+    aside .search h4 {font-size: 11px;}
+    aside .search form {padding-right: 0px !important;padding-left: 0px !important;}
+    aside .search form input,
+    aside .search form button {height: 30px;}
+    aside .search form button img {padding: 2px 10px;}
+    aside .sendimage .details-sendimage span,
+    aside .confirmationimage .details-confirmationimage span,
+    aside .participantimage .details-participantimage span {font-size: 12px;}
+    aside .sendimage .details-sendimage h3,
+    aside .confirmationimage .details-confirmationimage h3,
+    aside .participantimage .details-participantimage h3 {font-size: 16px;}
+    aside .sendimage .image-sendimage,
+    aside .confirmationimage .image-confirmationimage,
+    aside .participantimage .image-participantimage {margin-top: 10px;width: 62px;}
+    aside .participantimage .image-participantimage img {height: 55px;}
+}
+@media screen and (max-width: 1023px) {
+    .logo {text-align: center;margin-bottom: 30px;}
+    header .logo img {float: none;}
+    nav {background-color: #1f425d;height: auto;}
+    .menu-icon {display: block;float:right;padding: 6px 10%;cursor: pointer;}
+    nav ul {display: none;}
+    nav ul li { float: none;}
+    aside {margin-top: 20px;padding-right: 15px !important;}
+    aside .search form input {width: 80%;}
+    aside .search form button {width: 20%;}
+    aside .search form button img {float: left;}
+    nav ul {height: inherit;text-align: center;}
+    nav ul li {width: 100%;margin: 0px;padding: 10px;}
+    .images-competition ul li a {font-size: 14px;}
+    aside .search {height: 90px;}
+    .hover-menu-nav {display: none;}
+    .image-icon-w,.triangle-topright {display: none;}
+}
+@media screen and (max-width: 767px) {
+    .top-menu ul li {text-align: center;margin: 10px 0px;}
+    header .top-menu ul li:nth-child(1), header .top-menu ul li:nth-child(2) {border: none;}
+    header .top-menu ul li a {padding: 0px;}
+    .images-competition ul li a {padding: 0px;font-size: 10px;}
+    .images-competition ul li a img {width: 40px;}
+    .images-competition ul .space-li-right, .images-competition ul .space-li-left {height: 42px}
+    .img-details .photographer-name,.img-details .competition-name,.img-details .upload-date,.img-details .rating-img {padding: 5px 0px;}
+    .carousel-inner>.item>img {height:270px !important;}
+}
+@media (min-width: 992px) {
+    .modal-lg {width: 790px !important;}
+}
+@media (max-width: 992px) {
+    .slideshow {margin-top: 10px !important;}
+}
+@media screen and (max-width: 420px) {
+    .images-competition ul .width-li3 {width: 100%;}
+    .images-competition ul .space-li-right, .images-competition ul .space-li-left{display: none;}
+    .carousel-inner>.item>img {height:150px !important;}
+}
+.image-back-user {position: absolute;width: 100%;z-index: -1;}
+.menu-new1 {padding-top: 30px;width: 944px;}
+.menu-new1 .nav-new1{ width: 944px;height:40px;background-color: #A2A4A7;
+                      background: -webkit-linear-gradient(#A2A4A7, #555557); /* For Safari 5.1 to 6.0 */
+                      background: -o-linear-gradient(#A2A4A7, #555557); /* For Opera 11.1 to 12.0 */
+                      background: -moz-linear-gradient(#A2A4A7, #555557); /* For Firefox 3.6 to 15 */
+                      background: linear-gradient(#A2A4A7, #555557); /* Standard syntax */
+                      border-radius: 0px 15px 15px 0px;}
+.nav-new1 ul{ float: right; padding-right: 20px;padding-left: 0px;}
+.nav-new1 ul li:last-child {margin-left: 0px;}
+.nav-new1 ul li{ float: right; list-style: none; margin-left: 40px; margin-top: 10px;}
+.nav-new1 .active-new1 { background-color: #4f4f51; border-radius: 20px; padding: 5px; margin-top: 4px;
+                         background: -webkit-linear-gradient(#535254, #2f2d2e); /* For Safari 5.1 to 6.0 */
+                         background: -o-linear-gradient(#535254, #2f2d2e); /* For Opera 11.1 to 12.0 */
+                         background: -moz-linear-gradient(#535254, #2f2d2e); /* For Firefox 3.6 to 15 */
+                         background: linear-gradient(#535254, #2f2d2e); /* Standard syntax */}
+.nav-new1 ul li a{ color: #ffffff; font-size: 12px;}
+.nav-new1 ul li a:focus {text-decoration: none;}
+.nav-new1 ul li a:hover{ text-decoration: none; color: #ae2ce5;}
+.search-new1 { width: 285px; height: 70px; background-color: #919396; border-radius: 35px; position: relative; z-index: 1; margin-left: 100px;
+               margin-top: -55px;
+               background: -webkit-linear-gradient(#BCB8B8, #484545); /* For Safari 5.1 to 6.0 */
+               background: -o-linear-gradient(#BCB8B8, #484545); /* For Opera 11.1 to 12.0 */
+               background: -moz-linear-gradient(#BCB8B8, #484545); /* For Firefox 3.6 to 15 */
+               background: linear-gradient(#BCB8B8, #484545); /* Standard syntax */}
+.search-new1 form input{ width: 245px; height:40px; background-color: #4e4d4f; border:0 solid; color:#b7babd;
+                         border-radius: 30px !important; direction: rtl; padding-right: 10px; margin: 15px 20px;
+                         font-family: 'iran';
+                         background: -webkit-linear-gradient(#4e4d4f, #2d2a2c); /* For Safari 5.1 to 6.0 */
+                         background: -o-linear-gradient(#4e4d4f, #2d2a2c); /* For Opera 11.1 to 12.0 */
+                         background: -moz-linear-gradient(#4e4d4f, #2d2a2c); /* For Firefox 3.6 to 15 */
+                         background: linear-gradient(#4e4d4f, #2d2a2c); /* Standard syntax */
+                         box-shadow: -1px 2px 6px #353535;}
+.search-new1 form button{ position: relative; z-index: 2; top: -48px; left: 20px; background-color: transparent;border:none;}
+.icon-search-new1 {width: 19px;margin-left: 7px;}
+.logo-single {right: 40px;top: 20px;position: absolute;}
+@media screen and (max-width: 992px) {
+    .image-back-user {display: none;}
+    .bg-whiting {background-color: none;}
+    .logo-single {display: block;position: initial;margin: 0px auto;margin-bottom: 40px;}
+    .search-new1 {display: block;margin: 15px auto;}
+    .menu-new1 {width: 100%;}
+    .menu-new1 .nav-new1 {width: 100%;border-radius: 0px;}
+    .nav-new1 ul {display: block;margin: 0 auto;float: none;}
+    footer .logomi {float: none;text-align: center;padding-top: 35px;}
+
+    .nav-new1 ul {display: none;padding: 0px;clear: both;width: 100%;text-align: center;background-color: rgb(136, 136, 136);position: relative;z-index: 25;}
+    .nav-new1 ul li {float: none;margin: 10px 0px;}
+    .nav-new1 .active-new1 {background-color: transparent;margin-top: 0px;}
+    .hover-menu-nav-responsive {display: inherit;}
+    header .top-menu ul li span {    padding-left: 20px;}
+}
+@media screen and (max-width: 1280px) {
+    .logo-single {
+        width: 120px;
+    }
+}
+
+.footer-mi {width: 100%; padding: 10px 40px; direction: rtl;}
+.footer-mi span {width: 50%; margin: 10px; font-size: 12px; color: #949496; direction: rtl; cursor: pointer;}
+.footer-mi span:first-child {border-left: 1px solid #BBBBBB; padding-left: 20px;}
+.footer-mi span:hover {color:#ae2ce5;}
+footer {clear: both;background-color: #33363b; color: #838383; font-family: 'iran'; padding: 0px 35px 20px 35px;}
+footer .logomi {padding-top: 15px; float: left;}
+footer .btntopmi {height: 30px; text-align: center;position: relative; z-index: 1;}
+footer .btntopmi .btnback {width: 60px; height: 30px; text-align: center;background-color: #eaeaea; margin: 0 auto; border-radius: 3px;}
+footer .listmi ul {padding-top: 10px;}
+footer .listmi ul li {list-style: none; text-align: right; margin-bottom: 10px;}
+footer .listmi ul li a {color: #bfbfba;}
+footer .listmi ul li a:hover {text-decoration: none; color: #ae2ce5;}
+footer .socialmi ul{padding-left: 0px;padding-top: 15px;float: right;}
+footer .socialmi ul li{ list-style: none; float: left; margin-right: 10px;opacity: .7;}
+footer .socialmi ul li:hover {opacity: 1;}
+.titel-mi-mod {    width: 248px;
+                   height: 55px;
+                   background-color: #be1ff8;
+                   position: relative;
+                   z-index: 1;
+                   margin: 0 auto;
+                   text-align: center;
+                   padding: 8px;
+                   direction: rtl;
+                   margin-top: -16px;
+}
+.shape-1 {    margin: 0 auto;
+              width: 0;
+              height: 0;
+              border-style: solid;
+              border-width: 12px 125px 0 125px;
+              border-color: #be1ff8 transparent transparent transparent;}
+.rootmenu-im ul {background-color: #5A5A5C;padding-right: 0px;margin-top: 3px;padding:0px;}
+.rootmenu-im ul li:focus,
+.rootmenu-im ul li a:focus {background-color: transparent;}

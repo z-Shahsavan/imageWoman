@@ -1,0 +1,6 @@
+﻿.hdreg,.bdr{border-radius:5px;-moz-border-radius:5px;-webkit-border-radius:5px;}
+.hdreg{padding:4px 15px;position:absolute;top:-40px;}
+.regdiv{background:url('../images/bg-reg.jpg') center no-repeat;background-size:cover;background-attachment:fixed}
+.frmpd{padding:30px 0}
+.bgblur{background-color:rgb(240, 240, 240)}
+.req{position:absolute;right:1.35em;bottom:2px;color:#b3225b}

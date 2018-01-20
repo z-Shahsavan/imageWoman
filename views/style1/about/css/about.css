@@ -1,0 +1,7 @@
+.bg-whiting {background-color: #ffffff;background-image: url(../../../../images/fabric.png);border-top: 2px solid #E4E4E4;padding-bottom: 200px;}
+.about {direction: rtl;font-family: "iran",tahoma;padding: 0px 0px 50px 0px;}
+.subject-match-head span {bottom: 70px;position: relative;font-size: 24px;color: #ffffff;}
+@media screen and (max-width: 550px) {
+    .img-head {display: none;}
+    .subject-match-head span {background-color: #C104E7;bottom: 0px;position: relative;padding: 5px 20px;border-radius: 5px;font-size: 18px;}
+}

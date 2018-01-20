@@ -1,0 +1,14 @@
+/*.tab-content {background-image: url(../../../../images/gallery/thumb/image-pattern.png);}*/
+/*.tab-content {background-color: #eaeaea;}*/
+.load-more-image {clear: both;text-align: center;margin: -10px 0px 10px 0px;}
+/*.more-img {background-color: #7575FF;color: #ffffff;padding: 5px 20px;-webkit-transition: .3s;transition: .3s;}*/
+.more-img:hover {color: #ffffff;opacity: .7;-webkit-transition: .3s;transition: .3s;}
+.load-img {background-color: transparent;}
+/*.bg-image {background-image: url(../../../../publicuser/style1/images/image-pattern.png);margin-top: -10px;}*/
+.subject-match-head span {bottom: 70px;position: relative;font-size: 24px;color: #ffffff;}
+.tab-content2 {border-top: 6px solid #5ec6c7;border-bottom: 6px solid #5ec6c7;padding-bottom: 25px;background-image: url(../../../../publicuser/style1/images/pattern.png);}
+.bg-whiting {background-color: #ffffff;background-image: url(../../../../images/fabric.png);border-top: 2px solid #E4E4E4;padding-bottom: 100px;}
+@media screen and (max-width: 550px) {
+    .img-head {display: none;}
+    .subject-match-head span {background-color: #C104E7;bottom: 0px;position: relative;padding: 5px 20px;border-radius: 5px;font-size: 18px;}
+}

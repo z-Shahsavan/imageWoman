@@ -1,0 +1,14 @@
+.tablenotificationunread{color:#fff !important;padding:0px !important;}
+.tablenotificationread{color:#000 !important;padding:0px !important;}
+.tablenotificationmore{color:#000 !important;padding:0px !important;}
+.notifipointer td {cursor: pointer;}
+.notify {direction: rtl;font-family: 'iran';}
+.tnotify {margin-top: 30px;}
+.tnotify h5 {font-size: 22px;padding-bottom: 20px;}
+.deep-purple.darken-1 {background-color: #8A8A8A !important;}
+.deep-purple.lighten-5 {background-color: #ede7f6 !important;}
+table.centered thead tr th, table.centered tbody tr td {text-align: center;font-size: 13px;}
+.divider {height: 1px;overflow: hidden;background-color: #e0e0e0;}
+table.bordered>thead>tr, table.bordered>tbody>tr {border-bottom: 1px solid #d0d0d0;}
+.grey.lighten-3 {background-color: #eeeeee !important;}
+.verticale-icon {vertical-align: middle;margin-left: 10px;}

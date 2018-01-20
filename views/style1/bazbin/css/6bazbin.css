@@ -1,0 +1,33 @@
+.cattab{padding: 5px 20px;border-radius: 3px;margin: 0px 10px;}
+.cattab.active {background-color: #00695c;color: #ffffff;padding: 5px 20px;border-radius: 3px;margin: 0px 10px;}
+.cattab:hover {text-decoration: none;cursor: pointer;}
+#remdiv{margin-right:10px;font-size:18px}
+/*#sidemenu{margin-top: 97px;}*/
+.rtldir{float: right;}
+.cmt{clear:both;}
+.iconvertical {vertical-align: middle;font-size: 22px;}
+.bazbin-match {font-family: 'iran';}
+.right {float: right !important;}
+img.responsive-img, video.responsive-video {max-width: 100%;height: auto;}
+.cnt {direction: rtl;}
+.dir-rtl {direction: rtl;}
+.margintop25bottom15 {margin-top: 25px;margin-bottom: 15px;}
+.marginleft15 {margin-left: 15px;}
+.btn-enteshar {color: #fff;background-color: #26a69a;outline: 0;}
+.btn-enteshar:hover,
+.btn-enteshar:focus {color: #ffffff; outline: 0;}
+.btn-noenteshar {color: #fff;background-color: #880e4f;outline: 0;}
+.btn-noenteshar:hover,
+.btn-noenteshar:focus {color: #ffffff; outline: 0;}
+.load-more-image {clear: both;text-align: center;}
+.more-img {margin: -10px 0px 10px 0px;}
+.more-img:hover {color: #ffffff;opacity: .7;-webkit-transition: .3s;transition: .3s;}
+.load-img {background-color: #FF8686;color: #ffffff;background-color: transparent;}
+.load-img:hover {color: #ffffff;}
+.closing {background-color: transparent;border: none;color: #AFAFAF;margin-bottom: 6px;outline: 0;}
+.closing:hover {outline: 0;}
+.margintop25 {margin-top: 25px;}
+.vertical-middle {vertical-align: middle}
+#modcomm {direction: rtl;}
+#modcomm textarea {margin-bottom: 10px; }
+.clear {clear: both;}

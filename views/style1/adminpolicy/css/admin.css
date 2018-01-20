@@ -1,0 +1,5 @@
+.adminmnu a{-webkit-transition: all 180ms ease-in-out 0.1s;-moz-transition: all 180ms ease-in-out 0.1s;-ms-transition: all 180ms ease-in-out 0.1s;transition: all 180ms ease-in-out 0.1s;}
+.adminmnu{list-style:none;position:relative;text-align:center}
+.adminmnu li{display:inline-block;padding: 0px 10px;border-radius: 3px;margin: 5px 0px;}
+.adminmnu li .active{background-color:#2DB4EE;padding: 0px 10px;border-radius: 3px;color: #ffffff;transition: .5s;}
+.adminmnu a{color:#2a2a2a; text-decoration: none !important;}

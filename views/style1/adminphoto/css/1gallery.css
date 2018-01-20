@@ -1,0 +1,5 @@
+.pagination li.active{background-color:#9217c8;color:#ffffff;line-height:33px}
+.pagination li a{line-height:33px}
+#itemrate{margin-top:5px;float:right;clear:both;margin-bottom:10px}
+#modalgallery .cnt{max-height:60%;margin-top:15%;overflow-y:auto;padding-bottom:35px;border-radius:7px;-moz-border-radius:7px;-webkit-border-radius:7px;}
+#modalgallery .container{height:auto;}

@@ -1,0 +1,15 @@
+﻿.hdreg,.bdr{border-radius:5px;-moz-border-radius:5px;-webkit-border-radius:5px;}
+.hdreg{padding:4px 15px;position:absolute;top:-40px;}
+.regdiv{background:url('/public/style1/images/bg-reg.jpg') center no-repeat;background-size:cover;background-attachment:fixed;padding-bottom: 40px;}
+.frmpd{padding:30px 0}
+.bgblur{background-color:rgb(240, 240, 240)}
+.req{position:absolute;right:1.35em;bottom:2px;color:#b3225b}
+.minsh{min-height: 300px;border: 1px solid #d0d0cf;}
+.padding10 {padding: 10px;}
+.btnsending {background-color: #5429FF;color: #ffffff;margin-top: 10px;margin-bottom: 10px;}
+.btnsending:hover,.btnsending:focus {color: #ffffff;}
+@media only screen and (min-width: 601px) {
+    .row .col.m5 {width: 37%;}
+}
+.bg-whiting {background-color: #ffffff;padding: 50px 0px;background-image: url(../../../../images/fabric.png);border-top: 2px solid #E4E4E4;}
+input.form-control {border: 2px solid #b0b0b1 !important;}

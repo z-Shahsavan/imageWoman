@@ -1,0 +1,42 @@
+/*
+Theme Name: Image Sharing
+Author: rahasoft-amin
+Description: Share photos Women 1394.
+Version: 1.0
+*/
+
+/*
+* Table of content
+*=================
+*
+*	1.General
+*	2.Subject faq
+*	3.shiveha
+*
+*=================
+*/
+
+/*=============
+*   1.General
+===============*/
+.quiz01 {font-size: 30px;
+    color: #1F425D;
+    vertical-align: middle;}
+
+/*=============
+*   2.Subject faq
+===============*/
+.subject-match-head span {bottom: 70px;position: relative;font-size: 24px;color: #ffffff;}
+
+/*=============
+*   3.shiveha
+===============*/
+.shiveha {direction: rtl;font-family: 'iran',tahoma;margin-top: 20px;}
+.shiveha p {line-height: 24px;}
+.text-darken-4 {background-color: #ECECEC;padding: 10px;color: #4A4A4A;margin-bottom: 0px;}
+.text-darken-3 {background-color: #FFFFFF;padding: 10px;border: 1px solid #ECECEC;}
+@media screen and (max-width: 550px) {
+    .img-head {display: none;}
+    .subject-match-head span {background-color: #C104E7;bottom: 0px;position: relative;padding: 5px 20px;border-radius: 5px;font-size: 18px;}
+}
+.bg-whiting {background-color: #ffffff;background-image: url(../../../../images/fabric.png);border-top: 2px solid #E4E4E4;background-color: #ffffff;padding-bottom: 100px;}

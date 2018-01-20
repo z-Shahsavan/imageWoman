@@ -1,0 +1,111 @@
+#hdimg{width:100%;}
+#avatarus{width:150px;height: 150px;}
+#infouser p{font-size:14px;margin-top:5px;color:#ffffff}
+.margtop{
+    margin-top: 97px;
+}
+.cmpname {
+    position: absolute;
+    height: 20px;
+    bottom: 23px;
+    right: 20px;
+}
+.cmpname span {
+    color: #ffffff;
+}
+.resultrate {
+    padding: 10px 0px;
+    vertical-align: baseline;
+}
+.blog-new-style {font-family: 'iran',tahoma;}
+.subject-h5 {text-align: center;padding: 30px 0px;font-size: 18px;}
+.abctest ul {padding-left: 0px;margin: 0px 60px;}
+.abctest ul li {list-style: none;float: right;text-align: center;margin: 10px 0px 20px;}
+.abctest ul li a {
+	text-decoration: none;
+	cursor: pointer;
+}
+/*.active a {
+	padding: 5px 10px;
+	border-radius: 5px;
+	color: white !important;
+	background-color: #2db4ee;
+	-webkit-transition: .2s;
+    transition: .2s;
+    cursor: pointer;
+    text-decoration: none;
+}*/
+.load-more-image {clear: both;text-align: center;}
+.more-img {margin: -10px 0px 10px 0px;}
+.more-img:hover {color: #ffffff;opacity: .7;-webkit-transition: .3s;transition: .3s;}
+.load-img {background-color: transparent;margin: -10px 0px 20px 0px;}
+.load-img:hover {color: #ffffff;}
+.details-usering {margin-top: 10px;text-align: center;font-family: 'iran',tahoma;}
+.divider {
+    height: 1px;
+    overflow: hidden;
+    background-color: #e0e0e0;
+}
+.card {box-shadow: 0px 3px 6px 0px #B9B9B9;padding: 15px;border-top: 1px solid #E6E6E6;background-color: #4c9998;
+    border-radius: 25px 25px 0px 0px;color: #ffffff;}
+.padding-style1 {padding: 10px 0px;}
+.padding-style2 {padding: 10px 0px 0px 0px;}
+.margintop20 {
+	margin-top: 20px;
+}
+.margin-bottom40 {margin-bottom: 40px;}
+.free-wall {clear: both;}
+.img-details .rating-img span {
+    padding: 3px 0px 0px 0px;
+}
+.details-image1 span {padding-right: 5px;}
+.marginbottom10 {margin-bottom: 10px;}
+#bodyDiv {
+    position:absolute;
+    top:0px;
+    bottom:0px;
+    left:0px;
+    right:0px;
+}
+
+#scrollbox3 {
+    overflow: auto;
+    width: 400px;
+    height: 800px;
+    padding: 0 5px;
+    border: 1px solid #b7b7b7;
+}
+
+.track3 {
+    width: 10px;
+    background: rgba(0, 0, 0, 0);
+    margin-right: 2px;
+    border-radius: 10px;
+    -webkit-transition: background 250ms linear;
+    transition: background 250ms linear;
+}
+.collection {
+    margin: 0.5rem 0 1rem 0;
+    border: 1px solid #e0e0e0;
+    border-radius: 2px;
+    overflow: hidden;
+    position: relative;
+}
+.collection .collection-item.avatar .circle {
+    position: absolute;
+    width: 42px;
+    height: 42px;
+    overflow: hidden;
+    /*left: 15px;*/
+    display: inline-block;
+    vertical-align: middle;
+}
+.mystyle1 {direction: rtl;font-family:'iran';}
+.decorationnone, .decorationnone:hover {text-decoration:none;}
+.cursorp {cursor: pointer;}
+.title a {text-decoration: none;}
+.bg-whiting {background-color: #ffffff;padding-bottom: 100px;background-image: url(../../../../images/fabric.png);border-top: 2px solid #E4E4E4;}
+@media screen and (max-width: 992px) {
+    .gallery-control {display: inline-block;}
+    .border-toping {margin-top: 15px;}
+}

@@ -1,0 +1,67 @@
+body{direction:ltr}
+#imagePreview {width: 100%;height: 180px;background-position: center center;background-size: cover;-webkit-box-shadow: 0 0 1px 1px rgba(0, 0, 0, .3);display: inline-block;}
+
+.file-field .btn, .file-field .btn-large{right:0;margin: auto;width: 180px}
+#filedrag{position: absolute;left:0;right: 0;top: 0;width: 100%;height: 180px;text-align: center;color:#2f2f2f;text-shadow:0 0 3px #ffffff}
+#filedrag:before {content: "";display: inline-block;height: 100%;vertical-align: middle;}
+.mgleft {margin-left:10px}
+ul.holder {background-color:#fff;}
+.mgtop {margin-top: 70px !important;}
+.upload-image {direction: rtl;font-family: 'iran';}
+.blue-grey.darken-3 {background-color: #37474f !important;color: #ffffff;}
+.reltive {position: relative;}
+.form-control {height: 40px;}
+.margintop60 {margin-top: 60px;}
+.margintop15 {margin-top: 15px;}
+.purple.darken-3 {background-color: #6a1b9a !important;color: #ffffff;}
+.padding0 {padding: 0;}
+.btn-darken {padding-top: 10px;}
+.btn-darken input {height: 40px;margin-top: -30px;opacity: 0;}
+.floatright {float: right;}
+.date-control2 {float: right;}
+.file-path {opacity: 0;}
+.margintop48 {margin-top:48px;}
+.date-control2 {height: 40px;padding-right: 0px;}
+.calendar {
+    padding: 15px;
+    text-align: center;
+    cursor: pointer;
+    background-color: rgb(204, 204, 204);
+    border-radius: 2px;
+    border: 1px solid #9A9A9A;
+}
+.day {border: 1px solid #BBBBBB;padding: 2px;}
+.day:hover {background-color: #ffffff;}
+.bootstrap-tags .tag .remove {float: right;margin-left: 5px;}
+.bootstrap-tags .tags {float: right !important;}
+/*.bootstrap-tags .tag {float: right;}*/
+.margintopbottom20 {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.btn-upload {
+	background-color: #26a69a;
+	color: #ffffff;
+}
+.btn-upload:hover {
+	color: #ffffff;
+}
+.marginbottom20 {
+	margin-bottom: 20px !important;
+}
+.marginbottom40 {
+	margin-bottom: 40px;
+}
+.vertical-i {
+    vertical-align: middle;
+    padding-left: 10px;
+}
+.floatright {float: right;}
+.bootstrap-tagsinput {width: 100%;}
+#progs.none {
+    opacity: 0;
+    filter:alpha(opacity=0);
+    transition: opacity 1.3s;
+}
+.bootstrap-tagsinput {line-height: 30px !important;}
+.bootstrap-tagsinput .tag [data-role="remove"] {margin-left: 5px;margin-right: 8px;}

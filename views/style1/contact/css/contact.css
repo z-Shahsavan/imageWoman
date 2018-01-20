@@ -1,0 +1,16 @@
+.contactul{font-size:16px;text-align:center}
+.contactul li{margin-bottom:20px}
+.contactul li span{display:inline-block;}
+.contactul li div{direction:ltr !important;display:inline-block;margin-right:15px;font-size:18px}
+.purp {color: #006064;}
+.msg {color: #00796b;}
+.msgerr {color: #dc1a1a;}
+.contact-pro {font-family: "iran",tahoma; padding: 0px 0px 40px 0px;}
+.bg-whiting {background-color: #ffffff;background-image: url(../../../../images/fabric.png);border-top: 2px solid #E4E4E4;padding-bottom: 100px;}
+label {margin: 10px 0px 5px 0px;font-weight: normal;}
+.subject-match-head span {bottom: 70px;position: relative;font-size: 24px;color: #ffffff;}
+input.form-control, textarea.form-control {border: 2px solid #b0b0b1;}
+@media screen and (max-width: 550px) {
+    .img-head {display: none;}
+    .subject-match-head span {background-color: #C104E7;bottom: 0px;position: relative;padding: 5px 20px;border-radius: 5px;font-size: 18px;}
+}

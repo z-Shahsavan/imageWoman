@@ -1,0 +1,16 @@
+﻿.hdreg,.bdr{border-radius:5px;-moz-border-radius:5px;-webkit-border-radius:5px;}
+.hdreg{padding:4px 15px;position:absolute;top:-40px;}
+.regdiv{background:url('../images/bg-reg.jpg') center no-repeat;background-size:cover;background-attachment:fixed}
+.frmpd{padding:30px 0}
+.bgblur{background-color:rgb(240, 240, 240)}
+.req{position:absolute;right:1.35em;bottom:2px;color:#b3225b}
+.btnsending {background-color: #5429FF;color: #ffffff;margin-top: 10px;margin-bottom: 10px;}
+.btnsending:hover,.btnsending:focus {color: #ffffff;}
+.activecod {font-family: 'iran';direction: rtl;}
+.colora {color: #A0A0A0;}
+.paddingtop10 {padding-top: 10px;}
+.marginbottom10 {margin-bottom: 10px;} 
+.padding10 {padding: 10px;border: 1px solid #d0d0cf;}
+.margintop15 {margin-top: 15px;}
+.form-control {border: 2px solid #b0b0b1 !important;}
+.bg-whiting {background-color: #ffffff;padding: 50px 0px;background-image: url(../../../../images/fabric.png);border-top: 2px solid #E4E4E4;padding: 30px 0px 100px 0px;}

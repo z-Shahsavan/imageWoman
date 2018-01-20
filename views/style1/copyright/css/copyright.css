@@ -1,0 +1,9 @@
+.copyright-pro {font-family: "iran",tahoma; direction: rtl;padding: 0px 0px 50px 0px;}
+.text-darken-4 {background-color: #ECECEC;padding: 10px;color: #4A4A4A;margin-bottom: 0px;}
+.text-darken-3 {background-color: #FFFFFF;padding: 10px;border: 1px solid #ECECEC;}
+.bg-whiting {background-color: #ffffff;background-image: url(../../../../images/fabric.png);border-top: 2px solid #E4E4E4;background-color: #ffffff;padding-bottom: 150px;}
+.subject-match-head span {bottom: 70px;position: relative;font-size: 24px;color: #ffffff;}
+@media screen and (max-width: 550px) {
+    .img-head {display: none;}
+    .subject-match-head span {background-color: #C104E7;bottom: 0px;position: relative;padding: 5px 20px;border-radius: 5px;font-size: 18px;}
+}

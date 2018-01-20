@@ -1,0 +1,15 @@
+/*<span class="badge iswinner"></span>*/
+.iswinner{
+	border-radius: 5px;
+	margin-top: 5px;
+	float: left !important;
+	background-image: url("/images/icons/star-on.png"); 
+	background-repeat: no-repeat;
+	background-position: center center;
+	width: 28px;
+	height: 28px;
+}
+.text-gallery {text-align: right;}
+.text-gallery p {margin-top: 0px;}
+.one-section {margin-bottom: 20px;margin-top: 20px;}
+.mgbtm2 {width: 90%;}
